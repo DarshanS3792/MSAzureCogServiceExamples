@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MSAzureCogServiceExamples.Views.EmotionPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="StartAndExpand" Spacing="20" Padding="20" HorizontalOptions="Center" >
+            <Label Text="Emotion Service Example" FontSize="Default" FontAttributes="Bold" />
+
+            <StackLayout>
+                <Button Text="Take Photo to Check Faces" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding TakePhotoCommand}"/>
+                <Button Text="Pick Photo to Check Faces" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding SelectPhotoCommand}"/>
+            </StackLayout>
+
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+
+            <Label Text="{Binding Message}" FontSize="Medium" FontAttributes="Bold" />
+
+            <Image Source="{Binding SelectedImage}" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

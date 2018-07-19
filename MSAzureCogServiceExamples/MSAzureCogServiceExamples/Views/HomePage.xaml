@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MSAzureCogServiceExamples.Views.HomePage"
+             BackgroundColor="White">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+            <Label Text="Examples using Cognitive Services in MS Azure" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Default" />
+
+            <Button Text="Face API" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToFacePageCommand}"/>
+            <Button Text="Emotion API" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToEmotionPageCommand}"/>
+            <Button Text="QnA Maker Bot API" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToAzureFAQBotPageCommand}"/>
+            <Button Text="Vision API" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToVisionPageCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
