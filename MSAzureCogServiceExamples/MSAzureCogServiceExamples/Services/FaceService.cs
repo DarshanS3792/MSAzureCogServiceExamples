@@ -11,15 +11,17 @@ namespace MSAzureCogServiceExamples.Services
     {
         public static async Task<FaceRectangle[]> UploadAndDetectFaces(Stream stream)
         {
-            var faceClient = new FaceServiceClient(CognitiveServicesKeys.FaceKey);
+            var faceClient = new FaceServiceClient(CognitiveServicesKeys.FaceKey, "https://westcentralus.api.cognitive.microsoft.com/face/v1.0");
 
             var faces = await faceClient.DetectAsync(stream);
+
             var faceRects = faces.Select(face => face.FaceRectangle);
 
             if (faceRects == null || faceRects.Count() == 0)
             {
                 throw new Exception("Can't detect the faces");
             }
+
             return faceRects.ToArray();
         }
     }

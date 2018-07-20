@@ -77,7 +77,6 @@ namespace MSAzureCogServiceExamples.ViewModels
                 var faces = await FaceService.UploadAndDetectFaces(selectedPicStream);
                 Message = "There are " + faces.Length.ToString() + " faces in picture";
                 file.Dispose();
-
             }
             catch (Exception ex)
             {
@@ -106,7 +105,6 @@ namespace MSAzureCogServiceExamples.ViewModels
             {
                 var file = await CrossMedia.Current.PickPhotoAsync().ConfigureAwait(true);
 
-
                 if (file == null)
                     return;
                 SelectedImage = ImageSource.FromStream(() => file.GetStream());
@@ -114,7 +112,6 @@ namespace MSAzureCogServiceExamples.ViewModels
                 var faces = await FaceService.UploadAndDetectFaces(selectedPicStream);
                 Message = "There are " + faces.Length.ToString() + " faces in picture";
                 file.Dispose();
-
             }
             catch (Exception ex)
             {

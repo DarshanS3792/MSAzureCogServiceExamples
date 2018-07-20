@@ -74,10 +74,9 @@ namespace MSAzureCogServiceExamples.ViewModels
                     return file.GetStream();
                 });
                 selectedPicStream = file.GetStream();
-                var message = await VisionService.UploadAndDetect(selectedPicStream);
-                Message = message;
+                var result = await VisionService.GetImageDescription(selectedPicStream);
+                Message = result;
                 file.Dispose();
-
             }
             catch (Exception ex)
             {
@@ -111,10 +110,9 @@ namespace MSAzureCogServiceExamples.ViewModels
                     return;
                 SelectedImage = ImageSource.FromStream(() => file.GetStream());
                 selectedPicStream = file.GetStream();
-                var message = await VisionService.UploadAndDetect(selectedPicStream);
-                Message = message;
+                var result = await VisionService.GetImageDescription(selectedPicStream);
+                Message = result;
                 file.Dispose();
-
             }
             catch (Exception ex)
             {

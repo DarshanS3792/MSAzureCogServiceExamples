@@ -77,7 +77,6 @@ namespace MSAzureCogServiceExamples.ViewModels
                 var emotion = await EmotionService.GetAverageHappinessScoreAsync(selectedPicStream);
                 Message = EmotionService.GetHappinessMessage(emotion);
                 file.Dispose();
-
             }
             catch (Exception ex)
             {
@@ -114,7 +113,6 @@ namespace MSAzureCogServiceExamples.ViewModels
                 var emotion = await EmotionService.GetAverageHappinessScoreAsync(selectedPicStream);
                 Message = EmotionService.GetHappinessMessage(emotion);
                 file.Dispose();
-
             }
             catch (Exception ex)
             {
