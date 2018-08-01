@@ -12,6 +12,7 @@ namespace MSAzureCogServiceExamples.ViewModels
         public ICommand GoToEmotionPageCommand { get; set; }
         public ICommand GoToAzureFAQBotPageCommand { get; set; }
         public ICommand GoToVisionPageCommand { get; set; }
+        public ICommand GoToImageSearchPageCommand { get; set; }
 
         public HomePageViewModel(INavigationService navigationService)
         {
@@ -21,6 +22,7 @@ namespace MSAzureCogServiceExamples.ViewModels
             GoToEmotionPageCommand = new DelegateCommand(GoToEmotionPage);
             GoToAzureFAQBotPageCommand = new DelegateCommand(GoToAzureFAQBotPage);
             GoToVisionPageCommand = new DelegateCommand(GoToVisionPage);
+            GoToImageSearchPageCommand = new DelegateCommand(GoToImageSearchPage);
         }
 
         async void GoToFacePage()
@@ -41,6 +43,11 @@ namespace MSAzureCogServiceExamples.ViewModels
         async void GoToVisionPage()
         {
             await _navigationService.NavigateAsync("VisionPage");
+        }
+
+        async void GoToImageSearchPage()
+        {
+            await _navigationService.NavigateAsync("ImageSearchPage");
         }
     }
 }

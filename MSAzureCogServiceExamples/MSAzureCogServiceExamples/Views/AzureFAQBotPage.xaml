@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MSAzureCogServiceExamples.Views.AzureFAQBotPage">
     <ContentPage.Content>
-        <WebView Source="https://webchat.botframework.com/embed/AzureSupportFAQs?s=A1EkDo6UCS4.cwA.EZo.xKEV_0-QHp0T30vMCv8s_tjCxYkhIFXVDfrOBw8pmgQ" />
+        <WebView Source="https://webchat.botframework.com/embed/AzureSupportFAQChatBot?s=kWjuh2Q7Ld8.cwA.B0s.LcqCjMrviWkrf9eTPqghUCO33KhIeXttFpUOKtpH19Y" />
     </ContentPage.Content>
 </ContentPage>

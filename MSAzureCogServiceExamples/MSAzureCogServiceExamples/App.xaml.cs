@@ -26,6 +26,7 @@ namespace MSAzureCogServiceExamples
             containerRegistry.RegisterForNavigation<EmotionPage, EmotionPageViewModel>();
             containerRegistry.RegisterForNavigation<AzureFAQBotPage>();
             containerRegistry.RegisterForNavigation<VisionPage, VisionPageViewModel>();
+            containerRegistry.RegisterForNavigation<ImageSearchPage, ImageSearchPageViewModel>();
         }
     }
 }

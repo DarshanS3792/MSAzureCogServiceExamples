@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <Reference Include="Microsoft.ProjectOxford.Face">
-      <HintPath>..\..\..\..\Program Files (x86)\Microsoft SDKs\NuGetPackages\Microsoft.ProjectOxford.Face.1.4.0\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\Microsoft.ProjectOxford.Face.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.ProjectOxford.Face.1.4.0\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\Microsoft.ProjectOxford.Face.dll</HintPath>
     </Reference>
   </ItemGroup>
 
@@ -38,6 +38,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\FacePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ImageSearchPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\VisionPage.xaml">

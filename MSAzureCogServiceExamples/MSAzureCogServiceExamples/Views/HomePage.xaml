@@ -9,9 +9,10 @@
             <Label Text="Examples using Cognitive Services in MS Azure" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Default" />
 
             <Button Text="Face API" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToFacePageCommand}"/>
-            <Button Text="Emotion API" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToEmotionPageCommand}"/>
+            <!--<Button Text="Emotion API" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToEmotionPageCommand}"/>-->
             <Button Text="QnA Maker Bot API" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToAzureFAQBotPageCommand}"/>
             <Button Text="Vision API" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToVisionPageCommand}"/>
+            <Button Text="Bing Search" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToImageSearchPageCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 
